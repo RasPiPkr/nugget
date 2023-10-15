@@ -14,7 +14,7 @@ import tkinter as tk # Main GUI library
 import googlemaps # Used for finding nearest argument in options list
 import threading # Used for background
 import datetime # Used only to correct the time received by GPS
-import pynmea2 #Used to parse the GPS
+import pynmea2 # Used to parse the GPS
 import serial # Used to access the GPS module
 import time # Used only to delay some loops
 
