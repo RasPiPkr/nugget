@@ -3,6 +3,8 @@
 # You will need to setup your API details in the file api_keys.py
 # GPS data messages information can be found at https://aprs.gids.nl/nmea/
 
+# Install libraries: pip3 install googlemaps openrouteservice tkintermapview pynmea2 pynput
+
 from api_keys import GMAPS_API_KEY, ORS_API_KEY # Gets api keys required from local file api_keys.py
 from pynput.mouse import Button, Controller # Used for controlling the mouse
 import openrouteservice as ors # Used for directions between A and B
