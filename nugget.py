@@ -146,7 +146,7 @@ def search_for(find):
                                  rank_by='distance')
     nearest = nearby['results'][0]
     destination = nearest['geometry']['location']['lat'], nearest['geometry']['location']['lng']
-    coords = [[lat, lon], list(reversed(destination))]
+    coords = [[lon, lat], list(reversed(destination))]
     # Setup ORS for getting the directions
     client = ors.Client(key=ORS_API_KEY)
     routes = client.directions(coords, format='geojson')
